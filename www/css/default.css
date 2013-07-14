@@ -1,0 +1,304 @@
+body {
+	margin: 80px 0 0 0;
+	padding: 0;
+	font-family: Verdana;
+	font-size: 12px;
+	background-color: #5b70a3;
+	color: #5b70a3;
+}
+
+a {
+	text-decoration: none;
+	color: #5b70a3;
+}
+
+img {
+	border: none;
+}
+
+.clear {
+	clear: both;
+}
+
+.hidden {
+	display: none;
+}
+
+#container {
+	width: 800px;
+	margin: 0 auto;
+	background-color: white;
+	
+	background-image: url(/img/background.png);
+	background-repeat: no-repeat;
+	background-position: 510px 20px;
+	
+	padding-bottom: 16px;
+	
+	border-radius: 6px;
+	
+	min-height: 350px;
+}
+
+	#container .logo {
+		padding: 24px 0px 0px 32px;
+	}
+
+	#container .description {
+		font-size: 14px;
+		margin-left: 40px;
+		padding-right: 10px;
+	}
+	
+	#container .read-privacy {
+		margin-right: 6px;
+		
+		background-image: url(/img/padlock.png);
+		background-repeat: no-repeat;
+		
+		height: 16px;
+		line-height: 16px;
+		
+		text-indent: 20px;
+		
+		float: right;
+	}
+	
+		#container .read-privacy a {
+			text-decoration: underline;
+		}
+	
+	#container .content {
+		font-size: 14px;
+		margin-left: 40px;
+		padding-right: 40px;
+	}
+	
+	#container .smaller {
+		width: 500px !important;
+	}
+	
+	#container .just {
+		text-align: justify;
+	}
+	
+	.bg-chrome {
+		background-image: url(/img/bg-chrome.png);
+		background-repeat: no-repeat;
+		background-position: top center;
+		min-height: 300px;
+	}
+	
+#steps {
+	margin: 20px 0px 20px 30px;
+	padding: 0;
+	list-style-type: none;
+}
+
+	#steps li.level-1 {
+		margin-bottom: 16px;
+	}
+	
+	#steps .number {
+		width: 35px;
+		height: 35px;
+		background-repeat: no-repeat;
+		background-image: url(/img/number.png);
+		
+		text-align: center;
+		color: white;
+		font-size: 14px;
+		font-family: verdana;
+		font-weight: bold;
+		line-height: 35px;
+		
+		margin-right: 8px;
+		float: left;
+	}
+	
+	#steps .number-red {
+		background-image: url(/img/number_red.png) !important;
+	}
+	
+	#steps .text {
+		font-size: 14px;
+		
+		display: inline-block;
+		zoom: 1;
+		*display: inline;
+		
+		margin-top: 8px;
+	}
+	
+	#steps .text span {
+		display: block;
+		margin-bottom: 6px;
+	}
+	
+	#steps .text a {
+		font-weight: bold;
+		text-decoration: none;
+	}
+	
+	#steps .text a:hover {
+		text-decoration: underline;
+	}
+	
+	#steps ul.extensions {
+		list-style-type: none;
+		margin: 8px 0px 0px 0px;
+		padding: 0;
+	}
+	
+	#steps ul.extensions li {
+		display: inline;
+		margin-right: 4px;
+	}
+	
+	#steps .text .fb-login {
+		margin-top: 12px;
+	}
+
+footer {
+	color: white;
+	text-align: center;
+	padding-top: 8px;
+	position: relative;
+	width: 780px;
+	margin: 0 auto;
+}
+	footer .social {
+		position: absolute;
+		right: 0;
+		top: 4px;
+	}
+	
+	footer a {
+		color: white;
+	}
+	
+	footer a:hover {
+		text-decoration: underline;
+	}
+	
+	footer ul {
+		margin: 0;
+		padding: 0;
+		list-style-type: none;
+	}
+	
+	footer li {
+		display: inline;
+	}
+	
+	footer .donate {
+		margin-top: 16px;
+		font-size: 10px;
+		color: #fee0a5;
+		font-style: italic;
+	}
+	
+	footer .copyright {
+		margin-top: 8px;
+		font-size: 10px;
+	}
+	
+.ext {
+	opacity: 0.4;
+}
+
+div.form {
+	width: 300px;
+	margin: 0 auto;
+	border: 1px solid #5b70a3;;
+	border-radius: 8px;
+	padding: 32px;
+	background-color: #e4e9f5;
+	opacity: 0.9;
+}
+
+	div.form label {
+		margin-bottom: 4px;
+		display: block;
+	}
+	
+	div.form input, div.form select, div.form textarea {
+		width: 100%;
+		border-radius: 4px;
+		border: 1px solid #ececec;
+		margin-bottom: 12px;
+		
+		font-family: verdana;
+		font-size: 12px;
+		
+		padding: 6px 4px;
+	}
+	
+	div.form button {
+		background-color: #5b70a3;
+		color: white;
+		border: none;
+		border-radius: 4px;
+		
+		font-size: 12px;
+		padding: 8px 12px;
+	}
+	
+	div.form div.buttons {
+		text-align: right;
+	}
+	
+	div.form div.recover {
+		text-align: right;
+		margin-top: 8px;
+		font-size: 12px;
+	}
+	
+	div.form div.recover a:hover {
+		text-decoration: underline;
+	}
+	
+	div.form textarea.tall {
+		height: 120px;
+	}
+
+#message {
+	margin: 20px auto;
+	text-align: center;
+	padding: 4px 8px;
+	border-radius: 4px;
+	width: 80%;
+	color: black !important;
+	font-size: 11px;
+}
+
+.error {
+	border: 1px solid red;
+	background-color: #ffd8d8;
+}
+
+.success {
+	border: 1px solid #008000;
+	background-color: #c7fbd7;
+}
+
+ul.list {
+	list-style-type: none;
+	padding-left: 0;
+}
+
+ul.list li {
+	margin-bottom: 12px;
+}
+
+a.screenshot {
+	display: inline-block;
+	border: 2px solid #5b70a3;
+	padding: 4px;
+	border-radius: 4px;
+}
+
+.youtube {
+	text-align: center;
+	margin-top: 40px;
+}

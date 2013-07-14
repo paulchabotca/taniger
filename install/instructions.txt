@@ -1,0 +1,10 @@
+1. Import taniger.sql to create the required tables
+2. Create a facebook application and write down the application id and secret key.
+3. Edit config.php and copy it to the website's root directory (where init.php resides).
+4. You need to edit 2 extension files:
+	1. /extension/chrome/taniger/manifest.json
+	2. /extension/chrome/taniger/src/bg/background.js
+	
+	Search for 'www.taniger.com' and replace where required.
+
+If all is well, you should be ready to go :)

@@ -1,0 +1,70 @@
+.taniger-interface {
+	position: relative;
+}
+
+.taniger-interface div.button {
+	float: right;
+	text-align: right;
+	margin: 6px 6px 0 0;
+}
+
+.taniger-interface div.status {
+	float: left;
+	margin: 6px 0 0 6px;
+}
+
+	.taniger-interface div.status span.unsecure {
+		color: #ff0000 !important;
+	}
+	
+	.taniger-interface div.status span.secure {
+		color: #008000 !important;
+	}
+
+.taniger-interface div.clear {
+	clear: both;
+}
+
+.taniger-interface .hidden {
+	display: none;
+}
+
+.taniger-interface .menu {
+	background-color: #ffcc00;
+	width: 100px;
+	padding: 12px;
+	border: 1px solid #dcdcdc;
+	position: absolute;
+	border-radius: 4px;
+	z-index: 999999;
+}
+
+	.taniger-interface .menu select {
+		width: 100%;
+	}
+	
+	.taniger-interface .menu label {
+		color: #000 !important;
+	}
+	
+	.taniger-interface .menu .btn {
+		width: 100%;
+		border: 1px solid #ececec;
+		background-color: #5b70a3;
+		font-size: 11px;
+		margin-top: 6px;
+		color: white;
+		padding: 4px 0;
+	}
+
+.taniger-secure-icon {
+	position: relative;
+	top: 4px;
+	left: -2px;
+}
+
+.taniger-settings-icon {
+	position: relative;
+	top: 4px;
+	left: -6px;
+}
