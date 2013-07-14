@@ -252,6 +252,16 @@ var Taniger = {
 				return false;
 			});
 			
+			jQuery(this).find('.secure-button a').click(function() {
+				Taniger.toggleProtection(this);
+				return false;
+			});
+			
+			jQuery(this).find('.settings a').click(function() {
+				Taniger.showMenu(this);
+				return false;
+			});
+			
 			/*
 				I stop the propagation because in tabbed chat when you would click the menu, it would close.
 				
@@ -353,31 +363,19 @@ var Taniger = {
 		
 		// It's the first injection.
 		if (existing_user_id.length == 0) {
-			
 			var div = jQuery('<div>').addClass('taniger-interface').html(html.single.secure + html.single.settings + html.single.clear + html.menu);
 			jQuery(box).append(div);
+			
+			/*
+				Here I add a dummy attribute in order to mark the injected html code as new.
+				This way it will be easier to detect it and manipulate it
+			*/
+			jQuery(box).find('.taniger-interface').attr('name', 'new');
 		}
-		
-		// Attach some events
-		jQuery(box).find('.taniger-interface .settings a').click(function() {
-			Taniger.showMenu(this);
-			return false;
-		});
-		
-		jQuery(box).find('.taniger-interface .secure-button a').click(function() {
-			Taniger.toggleProtection(this);
-			return false;
-		});
 		
 		// Add the user's id to the OK button as well so we don't have to look for it again.
 		jQuery(box).find('.taniger-interface .ok').attr('taniger-user-id', this.config.chats[chat_index].user_id);
 		jQuery(box).find('.taniger-interface .secure-button a').attr('taniger-user-id', this.config.chats[chat_index].user_id);
-		
-		/*
-			Here I add a dummy attribute in order to mark the injected html code as new.
-			This way it will be easier to detect it and manipulate it
-		*/
-		jQuery(box).find('.taniger-interface').attr('name', 'new');
 		
 		this.setOptions(jQuery(box).find('.taniger-interface').parent(), chat_index);
 	},
