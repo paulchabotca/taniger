@@ -930,7 +930,7 @@ var Taniger = {
 	
 	/* This function detects and decrypts any messages */
 	decryptMessages: function() {
-		jQuery("p:contains('PTFBP'), div:contains('PTFBP')").each(function() {
+		jQuery("p:contains('PTFBP'), div:contains('PTFBP'), span:contains('PTFBP')").each(function() {
 			if (jQuery(this).children().size() == 0) {
 				// Process the encrypted text
 				var data = Taniger.processCipher(jQuery(this).text());
